@@ -1,0 +1,262 @@
+@media (max-width: 992px) {
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    display: none !important;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    display: none !important;
+  }
+  .main-slide {
+    text-align: center;
+    background-position: center !important;
+  }
+
+  .main-card {
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      height: 150px;
+    }
+    .tags {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      .sub {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        span {
+          font-size: 16px;
+        }
+      }
+      .epsInfo {
+        margin-left: 0;
+        gap: 30px;
+      }
+    }
+    p {
+      font-size: 18px;
+      text-align: center;
+      max-width: none;
+    }
+    .main-btns {
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        span {
+          font-size: 16px !important;
+        }
+      }
+
+      button {
+        span {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+  .mySwiper {
+    .swiper-slide {
+      width: calc(100% / 3);
+    }
+  }
+  .anime-page {
+    .cover {
+      height: 150px;
+    }
+    .main-card.animeP {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .cardInfo {
+        .road {
+          font-size: 13px !important;
+          justify-content: center;
+        }
+        h1 {
+          font-size: 32px;
+          padding-top: 10px;
+          height: 90px;
+        }
+        .tags {
+          .sub {
+            span {
+              font-size: 13px;
+            }
+          }
+          justify-content: center;
+
+          .epsInfo {
+            margin: 0;
+            justify-content: center;
+          }
+        }
+        .main-btns {
+          margin-top: 2rem !important;
+          a,
+          button {
+            span {
+              font-size: 15px !important;
+            }
+          }
+        }
+      }
+      .cardThree {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 !important;
+        .ra-info {
+          ul {
+            flex-wrap: wrap;
+            flex-direction: row !important;
+            font-size: 15px !important;
+          }
+        }
+        .genres {
+          width: 100%;
+          ul {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .charactersSlider {
+      align-items: center;
+      justify-content: center;
+      .imgCard img {
+        width: 100px;
+      }
+    }
+    iframe {
+      margin: 50px auto !important;
+      height: 200px !important;
+      width: 100% !important;
+    }
+    .description {
+      font-size: 15px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .app-navbar {
+    padding: 0.5rem 0 !important;
+  }
+  .mainSlider {
+    .main-card {
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        height: 100px;
+      }
+      p {
+        font-size: 16px;
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+  }
+  .animeSlide {
+    .filter {
+      gap: 30px !important;
+    }
+    .slider-links {
+      .slider-title {
+        font-size: 20px !important;
+      }
+      a {
+        font-size: 15px !important;
+      }
+    }
+  }
+  .showSwiper .showAnime {
+    .imgHolder {
+      height: auto !important;
+    }
+    .main-card {
+      h1 {
+        height: 87px !important;
+        margin-top: 20px !important;
+      }
+      span {
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+      p {
+        height: 60px !important ;
+        overflow: hidden !important;
+        margin-bottom: 10px;
+      }
+      .main-btns {
+        a {
+          span {
+            font-size: 16px !important;
+          }
+        }
+      }
+    }
+  }
+  .randompage {
+    .title {
+      h3 {
+        font-size: 24px !important;
+      }
+      button {
+        font-size: 18px !important;
+      }
+    }
+    .random {
+      .ra-card {
+        flex-direction: column !important;
+        img {
+          max-width: 300px !important;
+          width: auto !important;
+        }
+        .ra-btns {
+          justify-content: center !important;
+        }
+      }
+    }
+  }
+  .addToListCard {
+    width: auto;
+    border-radius: 12px;
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    z-index: 1000;
+
+    ul {
+      flex-wrap: wrap;
+      flex-direction: column;
+      li {
+        font-size: 18px;
+      }
+    }
+  }
+  .randompage .addToListCard {
+    left: -20px;
+  }
+  .searchUl {
+    gap: 25px;
+    flex-wrap: wrap;
+    li {
+      font-size: 17px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .nav-search-holder {
+    width: 100% !important;
+  }
+}

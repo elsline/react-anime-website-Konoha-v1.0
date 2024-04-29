@@ -1,0 +1,1003 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+:root {
+  --sec-backColor: #101313;
+  --main-color: rgba(255, 0, 234, 0.7);
+  --main-bg-color: #060707;
+}
+.main-bg-1 {
+  background-color: var(--main-bg-color);
+}
+.main-bg-2 {
+  background-color: var(--sec-backColor);
+}
+.w-fit {
+  width: fit-content;
+}
+.z-1000 {
+  z-index: 10000;
+}
+body {
+  background-color: #060707 !important;
+  color: white !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+.curs-p {
+  cursor: pointer;
+}
+.fs-70 {
+  font-size: 35px !important;
+}
+.fs-18 {
+  font-size: 18px !important;
+}
+.fs-16 {
+  font-size: 20px !important;
+}
+.h-111 {
+  height: 119px !important;
+}
+
+.webLogo {
+  width: 50px;
+}
+
+.app-navbar {
+  padding: 1rem 0 !important;
+  color: white !important;
+  background-color: #060707 !important;
+
+  z-index: 10 !important;
+  width: 100% !important;
+}
+.app-navbar a.lo {
+  line-height: 0.7;
+  color: white !important;
+  font-size: 26px;
+}
+
+.app-navbar a {
+  letter-spacing: 2px;
+  color: white !important;
+}
+.app-navbar a:hover {
+  color: var(--main-color) !important;
+}
+
+.app-navbar a.lo:hover {
+  color: white !important;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.searchIcon {
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.searchIcon i {
+  transition: 0.4s;
+  font-size: 28px;
+}
+
+.searchIcon:hover i {
+  color: var(--main-color);
+}
+.nav-search {
+  background-color: #060707 !important;
+  color: white !important;
+  border-radius: 25px !important;
+  box-shadow: none;
+}
+.nav-search:focus {
+  border-color: rgba(255, 0, 170, 0.25) !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 234, 0.25) !important;
+}
+
+.nav-search-holder {
+  position: relative;
+}
+.nav-search-holder i {
+  color: rgba(255, 255, 255, 0.842);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.nav-search::placeholder {
+  text-align: center;
+  color: gray !important;
+}
+.nav-user {
+  transition: 0.4s;
+}
+.nav-user:hover {
+  color: rgba(255, 0, 234, 0.5);
+}
+.navbar-toggler {
+  padding: 0 !important;
+}
+.navbar-toggler-icon {
+  padding: 0;
+  background-image: url(/src/imgs/download.svg) !important;
+}
+@media (max-width: 992px) {
+  .navbar-collapse .nav-user {
+    margin: 0 !important;
+  }
+}
+
+.search-page {
+  .nav-search-holder {
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    form {
+      width: 100%;
+    }
+  }
+  a {
+    text-decoration: none;
+    .anime-card {
+      padding: 10px 0;
+      max-width: auto;
+      display: flex;
+      flex-direction: column;
+      .imgHolder {
+        position: relative;
+        &:after {
+          position: absolute;
+          content: "";
+          background-color: rgba(255, 0, 234, 0.199);
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: 0.4s;
+        }
+        &:hover:after {
+          opacity: 1;
+        }
+        &:hover {
+          img {
+            filter: grayscale(1);
+          }
+        }
+      }
+      img {
+        transition: 0.4s;
+        border-radius: 10px;
+        height: 280px;
+        background-color: #343333;
+      }
+      span {
+        color: white;
+        padding-top: 8px;
+        font-weight: 700;
+        font-size: 20px;
+        .title {
+          overflow-wrap: break-word;
+          word-break: break-word;
+          hyphens: auto;
+          font-weight: 400;
+        }
+        .rank {
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+  .btns {
+    button {
+      transition: 0.4s;
+      &:hover {
+        color: var(--main-color) !important;
+      }
+    }
+  }
+}
+
+.bullets {
+  padding: 30px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 25px;
+  a {
+    transition: 0.4s;
+    text-decoration: none;
+    font-size: 24px;
+    color: white !important;
+  }
+  li {
+    &:hover {
+      a {
+        color: var(--main-color) !important;
+      }
+    }
+    &.active {
+      a {
+        color: var(--main-color) !important;
+      }
+    }
+  }
+}
+
+.main-slide {
+  transition: 0.4s;
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+  background-size: cover;
+  background-position: left;
+  width: 100%;
+  height: 800px;
+  background-image: url("");
+  background-color: #060707;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(6 7 7 / 40%);
+
+    z-index: -1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      rgb(6 7 7 / 80%)
+    );
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .overllay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgb(0, 0, 0)
+    );
+    top: 100px;
+    left: 0;
+    z-index: 1;
+  }
+  .next,
+  .prev {
+    padding: 0 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    transition: 0.4s;
+    z-index: 10;
+    &:hover i {
+      color: white;
+    }
+    i {
+      transition: 0.4s;
+      color: rgba(255, 255, 255, 0.596);
+      font-size: 30px;
+    }
+  }
+  .next {
+    right: 0;
+  }
+}
+
+.main-card {
+  position: relative;
+  padding-top: 100px;
+  background-color: transparent;
+  z-index: 1;
+
+  h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+    height: 216px;
+    overflow: hidden;
+  }
+  .tags {
+    display: flex;
+    align-items: center;
+    .sub {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      span {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 5px 10px;
+        line-height: 20px;
+        border: 1px solid white;
+      }
+      .fk {
+        background-color: #bd5d05;
+        color: black;
+        border-color: transparent;
+      }
+      .tv {
+        border: none;
+        padding: 0;
+      }
+    }
+    .epsInfo {
+      margin-left: 40px;
+      display: flex;
+      gap: 40px;
+      span {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+  p {
+    font-size: 20px;
+    max-width: 500px;
+    height: 200px;
+    overflow: hidden;
+    max-height: calc(1.2em * 6); /* Adjust line height and number of lines */
+    text-overflow: ellipsis;
+    margin: 40px 0;
+  }
+  .main-btns {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    a,
+    button {
+      text-decoration: none;
+      background-color: transparent;
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 30px;
+      padding: 10px 20px;
+      border: 1px solid var(--main-color);
+      transition: 0.4s;
+      span {
+        transition: 0.4s;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: white;
+        font-size: 20px;
+      }
+      i {
+        font-size: 17px;
+        color: var(--main-color);
+        transition: 0.4s;
+      }
+    }
+    .wn {
+      &:hover {
+        span {
+          color: white;
+        }
+        i {
+          color: white;
+        }
+        background-color: var(--main-color);
+      }
+    }
+    .atl {
+      border: none;
+    }
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px !important;
+  height: 50px !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 25px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: white;
+}
+.animeSlide {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 50px !important;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 40px !important;
+  }
+}
+.animeSlide {
+  .slider-title {
+    border-bottom: 2px solid var(--main-color) !important;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    .anime-card {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      span {
+        margin-top: 5px;
+        max-height: 60px;
+        overflow: hidden;
+      }
+      .imgHolder {
+        position: relative;
+        &:after {
+          position: absolute;
+          content: "";
+          background-color: rgba(255, 0, 234, 0.199);
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: 0.4s;
+        }
+        &:hover:after {
+          opacity: 1;
+        }
+        &:hover {
+          img {
+            filter: grayscale(1);
+          }
+        }
+      }
+      img {
+        background-color: #343333;
+        transition: 0.4s;
+        width: 100%;
+        height: 290px;
+      }
+    }
+  }
+}
+.showSwiper {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .showAnime {
+    padding: 100px 0;
+    padding-top: 60px;
+    .imgHolder {
+      height: 400px;
+      img {
+        width: 100%; /* Make image fill container width */
+        height: 100%; /* Make image fill container height */
+        object-fit: cover; /* Crop image to fit container without stretching */
+        object-position: top;
+      }
+    }
+  }
+}
+.main-color {
+  color: rgba(255, 0, 234, 0.7);
+}
+hr.main-color {
+  border: 1px solid rgba(255, 0, 234, 0.7);
+  color: rgba(255, 0, 234, 0.7);
+  opacity: 1;
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+.filter {
+  gap: 80px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 32px;
+  li {
+    background-color: #101313;
+    font-weight: 500;
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+    &.active {
+      color: var(--main-color);
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      background-color: white;
+      width: 81px;
+      height: 1px;
+      top: 50%;
+      transform: translateY(50%);
+    }
+    &:hover {
+      color: var(--main-color);
+    }
+    &:nth-of-type(3):after {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+.searchUl {
+  padding: 25px 0;
+  padding-top: 0;
+  li {
+    &:after {
+      position: absolute;
+      content: "";
+      background-color: white;
+      width: 81px;
+      height: 1px;
+      top: 50%;
+      transform: translateY(50%);
+    }
+    &:hover {
+      color: var(--main-color);
+    }
+    &:nth-of-type(3):after {
+      width: 81px;
+      height: 1px;
+    }
+    &:nth-of-type(6):after {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+.randompage {
+  .ra-btn {
+    color: white;
+    padding: 8px 16px;
+    margin: 50px 0;
+    transition: 0.4s !important;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    &:hover {
+      background-color: var(--main-color);
+    }
+  }
+  .ra-card {
+    &.active {
+      padding-left: 310px;
+      position: relative;
+      .imgHolder {
+        position: relative;
+        &:after {
+          top: 0;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: #101313;
+          z-index: 4;
+          left: 0;
+        }
+      }
+      .ra-info {
+        position: relative;
+        &:after {
+          top: 0;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: var(--main-bg-color);
+          z-index: 4;
+          left: 0;
+        }
+      }
+    }
+    img {
+      width: 300px;
+      min-height: 424px;
+      object-fit: cover;
+    }
+  }
+  .ra-btns {
+    margin-top: 40px;
+    gap: 20px;
+
+    a,
+    button {
+      padding: 6px 12px;
+      text-transform: capitalize;
+      color: white;
+      border: none;
+      background-color: transparent;
+      text-decoration: none;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.4s;
+
+      i {
+        transition: 0.4s;
+        color: var(--main-color);
+        font-size: 13px;
+      }
+    }
+    a {
+      border: 1px solid var(--main-color) !important;
+
+      border-radius: 29px;
+      &:hover {
+        background-color: var(--main-color);
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+  .addToListCard {
+    top: -110px;
+    left: 200px;
+    ul {
+      text-transform: capitalize;
+      li {
+        width: 200px;
+
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+footer {
+  a {
+    font-size: 18px !important;
+    &:hover {
+      color: var(--main-color) !important;
+    }
+  }
+}
+.anime-page {
+  .cover {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #060707a2;
+      z-index: -1;
+    }
+    .overllay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        rgb(0, 0, 0)
+      );
+      top: 100px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+  .main-card.animeP {
+    z-index: 3;
+    padding-top: 50px;
+    gap: 50px;
+    padding-bottom: 50px;
+    .cardImg {
+      img {
+        width: 250px;
+        height: 380px;
+      }
+    }
+    .cardInfo {
+      .road {
+        gap: 16px;
+        display: flex;
+        align-items: center;
+        i {
+          font-size: 8px;
+          color: #343333;
+        }
+        a {
+          cursor: pointer;
+          text-decoration: none;
+          color: white;
+        }
+        .name {
+          color: #585756;
+          font-weight: 600;
+        }
+      }
+      h1 {
+        font-size: 50px;
+        height: 120px;
+      }
+      .epsInfo {
+        margin-left: 20px;
+        align-items: center;
+        i {
+          font-size: 8px;
+          color: #343333;
+        }
+        gap: 20px;
+      }
+      p {
+        font-size: 16px !important;
+        height: auto;
+        overflow: none;
+        max-height: fit-content;
+      }
+      span {
+        font-size: 15px;
+      }
+    }
+    .cardThree {
+      ul {
+        font-size: 17px;
+      }
+      .genres {
+        ul {
+          border-color: #34333386 !important;
+        }
+        li {
+          font-size: 11px;
+          padding: 4px 10px;
+        }
+      }
+    }
+  }
+  .slider-title {
+    border-color: var(--main-color) !important;
+  }
+  p {
+    font-size: 16px;
+  }
+  .charactersSlider {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    .imgCard {
+      img {
+        width: 130px;
+      }
+      span {
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+  }
+  .epCard {
+    transition: 0.4s;
+    position: relative;
+    img {
+      height: 125px;
+      background-color: var(--sec-backColor);
+    }
+    i {
+      position: absolute;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 80%;
+      align-items: center;
+      z-index: 2;
+      opacity: 0;
+      transition: 0.4s;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      background-color: rgba(255, 0, 234, 0.199);
+      top: 0;
+      left: 0;
+      transition: 0.4s;
+      opacity: 0;
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+      i {
+        opacity: 1;
+      }
+    }
+  }
+  .loadMore {
+    a {
+      transition: 0.4s;
+      &:hover {
+        color: var(--main-color) !important;
+      }
+    }
+  }
+  .addToListCard {
+    top: 50px;
+
+    ul {
+      text-transform: capitalize;
+
+      padding: 0;
+      li {
+        font-size: 18px;
+      }
+    }
+  }
+}
+.AnimeImages {
+  .row {
+    div {
+      padding: 0;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.about {
+  .container {
+    margin-top: 200px;
+  }
+}
+
+.addToListCard {
+  opacity: 0;
+  display: none;
+  background-color: var(--sec-backColor);
+  width: 300px;
+
+  border-radius: 12px;
+  position: absolute;
+  top: -150px;
+  left: 10px;
+  z-index: 1000;
+
+  .closeIcon {
+    right: -50px;
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
+  ul {
+    text-transform: capitalize;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    li {
+      width: 100%;
+      text-align: start;
+      cursor: pointer;
+      padding: 10px 20px;
+
+      font-size: 24px;
+      transition: 0.4s;
+      &:hover {
+        color: var(--main-color);
+        transform: translateX(20px);
+      }
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.user-page {
+  min-height: 800px;
+  .container {
+    padding-top: 60px;
+  }
+  .row {
+    margin-bottom: 40px;
+  }
+  .slider-title {
+    border-color: var(--main-color) !important;
+  }
+
+  a {
+    .anime-card {
+      span {
+        font-size: 18px !important;
+        max-height: 50px;
+        overflow: hidden;
+      }
+    }
+    img {
+      height: 280px;
+      background-color: #343333;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .animeSlide {
+    .mySwiper {
+      .swiper-slide {
+        width: calc(100% / 3); /* Adjusted width for smaller screens */
+      }
+    }
+  }
+}

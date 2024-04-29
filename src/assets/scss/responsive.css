@@ -1,0 +1,216 @@
+@media (max-width: 992px) {
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    display: none !important;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    display: none !important;
+  }
+  .main-slide {
+    text-align: center;
+    background-position: center !important;
+  }
+  .main-card h1 {
+    text-align: center;
+    font-size: 60px;
+    height: 150px;
+  }
+  .main-card .tags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .main-card .tags .sub {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .main-card .tags .sub span {
+    font-size: 16px;
+  }
+  .main-card .tags .epsInfo {
+    margin-left: 0;
+    gap: 30px;
+  }
+  .main-card p {
+    font-size: 18px;
+    text-align: center;
+    max-width: none;
+  }
+  .main-card .main-btns {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-card .main-btns a span {
+    font-size: 16px !important;
+  }
+  .main-card .main-btns button span {
+    font-size: 16px !important;
+  }
+  .mySwiper .swiper-slide {
+    width: 33.3333333333%;
+  }
+  .anime-page .cover {
+    height: 150px;
+  }
+  .anime-page .main-card.animeP {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .anime-page .main-card.animeP .cardInfo .road {
+    font-size: 13px !important;
+    justify-content: center;
+  }
+  .anime-page .main-card.animeP .cardInfo h1 {
+    font-size: 32px;
+    padding-top: 10px;
+    height: 90px;
+  }
+  .anime-page .main-card.animeP .cardInfo .tags {
+    justify-content: center;
+  }
+  .anime-page .main-card.animeP .cardInfo .tags .sub span {
+    font-size: 13px;
+  }
+  .anime-page .main-card.animeP .cardInfo .tags .epsInfo {
+    margin: 0;
+    justify-content: center;
+  }
+  .anime-page .main-card.animeP .cardInfo .main-btns {
+    margin-top: 2rem !important;
+  }
+  .anime-page .main-card.animeP .cardInfo .main-btns a span,
+  .anime-page .main-card.animeP .cardInfo .main-btns button span {
+    font-size: 15px !important;
+  }
+  .anime-page .main-card.animeP .cardThree {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 !important;
+  }
+  .anime-page .main-card.animeP .cardThree .ra-info ul {
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    font-size: 15px !important;
+  }
+  .anime-page .main-card.animeP .cardThree .genres {
+    width: 100%;
+  }
+  .anime-page .main-card.animeP .cardThree .genres ul {
+    width: 100%;
+    justify-content: center;
+  }
+  .anime-page .charactersSlider {
+    align-items: center;
+    justify-content: center;
+  }
+  .anime-page .charactersSlider .imgCard img {
+    width: 100px;
+  }
+  .anime-page iframe {
+    margin: 50px auto !important;
+    height: 200px !important;
+    width: 100% !important;
+  }
+  .anime-page .description {
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 768px) {
+  .app-navbar {
+    padding: 0.5rem 0 !important;
+  }
+  .mainSlider .main-card h1 {
+    text-align: center;
+    font-size: 40px;
+    height: 100px;
+  }
+  .mainSlider .main-card p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .animeSlide .filter {
+    gap: 30px !important;
+  }
+  .animeSlide .slider-links .slider-title {
+    font-size: 20px !important;
+  }
+  .animeSlide .slider-links a {
+    font-size: 15px !important;
+  }
+  .showSwiper .showAnime .imgHolder {
+    height: auto !important;
+  }
+  .showSwiper .showAnime .main-card h1 {
+    height: 87px !important;
+    margin-top: 20px !important;
+  }
+  .showSwiper .showAnime .main-card span {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .showSwiper .showAnime .main-card p {
+    height: 60px !important;
+    overflow: hidden !important;
+    margin-bottom: 10px;
+  }
+  .showSwiper .showAnime .main-card .main-btns a span {
+    font-size: 16px !important;
+  }
+  .randompage .title h3 {
+    font-size: 24px !important;
+  }
+  .randompage .title button {
+    font-size: 18px !important;
+  }
+  .randompage .random .ra-card {
+    flex-direction: column !important;
+  }
+  .randompage .random .ra-card img {
+    max-width: 300px !important;
+    width: auto !important;
+  }
+  .randompage .random .ra-card .ra-btns {
+    justify-content: center !important;
+  }
+  .addToListCard {
+    width: auto;
+    border-radius: 12px;
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    z-index: 1000;
+  }
+  .addToListCard ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .addToListCard ul li {
+    font-size: 18px;
+  }
+  .randompage .addToListCard {
+    left: -20px;
+  }
+  .searchUl {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .searchUl li {
+    font-size: 17px;
+  }
+  .searchUl li:after {
+    display: none;
+  }
+  .nav-search-holder {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */
