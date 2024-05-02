@@ -16,7 +16,6 @@ function Home() {
           <AnimeSlider2 />
           <AnimeUpcoming />
           <AnimeRandom />
-          <Footer class="main-bg-2" />
         </div>
       </main>
     </Transition>

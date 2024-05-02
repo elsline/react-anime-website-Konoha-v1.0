@@ -113,7 +113,6 @@ function AnimeListFO() {
           </ul>
         </div>
       </section>
-      <Footer />
     </Transition>
   );
 }

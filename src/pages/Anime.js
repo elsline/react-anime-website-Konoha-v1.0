@@ -342,7 +342,6 @@ function Anime() {
           </div>
         </div>
       </section>
-      <Footer className="main-bg-2" />
     </Transition>
   );
 }

@@ -112,7 +112,6 @@ function AnimeListAR() {
           </ul>
         </div>
       </section>
-      <Footer />
     </Transition>
   );
 }

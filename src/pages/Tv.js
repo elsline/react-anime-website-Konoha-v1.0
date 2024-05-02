@@ -133,7 +133,6 @@ function Tv() {
             </button>
           </div>
         </div>
-        <Footer className="main-bg-2" />
       </section>
     </Transition>
   );

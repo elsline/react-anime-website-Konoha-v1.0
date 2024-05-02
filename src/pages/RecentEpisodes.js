@@ -50,7 +50,6 @@ function RecentEpisodes() {
               ))}
           </Row>
         </div>
-        <Footer class="main-bg-2" />
       </section>
     </Transition>
   );
